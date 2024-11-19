@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary bg-zinc-800 text-zinc-50 leading-loose;
+  }
+}
+
+@layer utilities {
+  .nav-link {
+    @apply transition-all duration-150 ease-in-out hover:font-semibold;
+  }
+
+  .h1 {
+    @apply text-5xl xl:text-7xl font-semibold;
+  }
+
+  .h2 {
+    @apply text-4xl xl:text-5xl font-semibold;
+  }
+
+  .h3 {
+    @apply text-3xl xl:text-4xl font-semibold;
+  }
+}
