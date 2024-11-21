@@ -54,7 +54,7 @@ export default function Services() {
           return (
             <div
               key={index}
-              className="flex flex-1 flex-col justify-center gap-6 group "
+              className="flex flex-1 flex-col justify-center gap-6 group bg-zinc-900/30 backdrop-blur-sm"
             >
               <div className="flex w-full justify-between items-center">
                 <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-300">
@@ -69,10 +69,12 @@ export default function Services() {
                   </span>
                 </Link>
               </div>
-              <h2 className="text-4xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
-                {item.title}
-              </h2>
-              <p className="text-sm text-zinc-400">{item.description}</p>
+              <div className="p-3">
+                <h2 className="text-4xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
+                  {item.title}
+                </h2>
+                <p className="text-sm text-zinc-400">{item.description}</p>
+              </div>
               <div className="border-b border-white/20 w-full"></div>
             </div>
           );

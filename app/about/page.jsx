@@ -208,7 +208,7 @@ export default function About() {
             >
               <div className="flex flex-col gap-8">
                 <h3 className="text-4xl font-bold">{about.title} </h3>
-                <p className="max-w-[600px] text-zinc-500 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-zinc-400 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 ">
@@ -238,7 +238,7 @@ export default function About() {
                       return (
                         <li
                           key={index}
-                          className="bg-zinc-700 h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-zinc-900/30 backdrop-blur-sm h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-teal-500">
                             {item.duration}{" "}
@@ -259,7 +259,7 @@ export default function About() {
             </TabsContent>
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-8 text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                <h3 className="text-4xl font-bold">{education.title}</h3>
                 <p className="max-w-[600px] text-zinc-500 mx-auto xl:mx-0">
                   {education.description}
                 </p>
@@ -269,7 +269,7 @@ export default function About() {
                       return (
                         <li
                           key={index}
-                          className="bg-zinc-700 h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-zinc-900/30 backdrop-blur-sm h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-teal-500">
                             {item.duration}{" "}
@@ -306,7 +306,7 @@ export default function About() {
                         >
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-zinc-700 rounded-lg flex items-center justify-center group">
+                              <TooltipTrigger className="w-full h-[150px] bg-zinc-900/30 backdrop-blur-sm rounded-lg flex items-center justify-center group">
                                 <div className="text-6xl group-hover:text-teal-400 transition-all duration-150  ">
                                   {item.icon}{" "}
                                 </div>

@@ -29,7 +29,7 @@ export default function Stats() {
           return (
             <div
               key={index}
-              className="flex flex-1 gap-4  items-center jjustify-centerxl:justify-start"
+              className="flex flex-1 gap-4  items-center justify-center xl:justify-start bg-zinc-950/20 py-3 backdrop-blur-sm border border-white/10 px-5"
             >
               <CountUp
                 end={item.num}

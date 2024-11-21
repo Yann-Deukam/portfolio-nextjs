@@ -46,7 +46,7 @@ export default function Contact() {
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-8">
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-zinc-900 ">
+            <form className="flex flex-col gap-6 p-10 bg-zinc-900/40 backdrop-blur-sm ">
               <h3 className="text-4xl text-teal-400">Let&apos;s have a talk</h3>
               <p className="text-zinc-300">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -87,7 +87,7 @@ export default function Contact() {
               {info.map((item, index) => {
                 return (
                   <li key={index} className="flex items-center gap-6">
-                    <div className="size-14 xl:size-18 bg-zinc-700 text-teal-400 flex items-center justify-center">
+                    <div className="size-14 xl:size-18 bg-zinc-900/30 backdrop-blur-sm text-teal-400 flex items-center justify-center">
                       <div>{item.icon} </div>
                     </div>
                     <div className="flex-1">

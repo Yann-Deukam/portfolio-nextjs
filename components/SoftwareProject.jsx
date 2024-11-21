@@ -114,7 +114,7 @@ export default function SoftwareProjects() {
               <h2 className="text-5xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
                 {project.category} project
               </h2>
-              <p className="text-zinc-500">{project.description} </p>
+              <p className="text-zinc-400">{project.description} </p>
               <ul className="flex gap-4">
                 {project.stack.map((item, index) => {
                   return (
@@ -129,7 +129,7 @@ export default function SoftwareProjects() {
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="size-[70px] rounded-sm bg-zinc-700 flex justify-center items-center group">
+                      <TooltipTrigger className="size-[70px] rounded-sm bg-zinc-900/30 backdrop-blur-sm flex justify-center items-center group">
                         <span className="text-white text-3xl group-hover:text-teal-500">
                           <MoveUpRight />
                         </span>
@@ -144,7 +144,7 @@ export default function SoftwareProjects() {
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="size-[70px] rounded-sm bg-zinc-700 flex justify-center items-center group">
+                      <TooltipTrigger className="size-[70px] rounded-sm bg-zinc-900/30 backdrop-blur-sm flex justify-center items-center group">
                         <span className="text-white text-3xl group-hover:text-teal-500">
                           <Github />
                         </span>

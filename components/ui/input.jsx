@@ -7,7 +7,7 @@ const Input = React.forwardRef(({ className, type, ...props }, ref) => {
     <input
       type={type}
       className={cn(
-        "flex h-10 border border-white/40 focus:border-teal-400/50 bg-zinc-900/30 px-4 py-5 outline-none focus:ring-0 placeholder:text-white/30",
+        "flex h-10 border border-zinc-100/20 focus:border-teal-400/50 bg-zinc-900/30 px-4 py-5 outline-none focus:ring-0 placeholder:text-white/30",
         className
       )}
       ref={ref}

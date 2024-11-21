@@ -54,7 +54,7 @@ export default function TestimonialSlider() {
       {clientsTestimonials.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row items-center gap-x-8 h-full px-16">
+            <div className="flex flex-col md:flex-row items-center gap-x-8 h-full px-16 ">
               <div className="w-full max-w-[300px] flex flex-col justify-center items-center relative mx-auto xl:mx-0 ">
                 <div className="flex flex-col justify-center items-center">
                   <div className="mb-2 mx-auto">
@@ -70,7 +70,7 @@ export default function TestimonialSlider() {
                   <div className="text-sm text-zinc-400">{item.position}</div>
                 </div>
               </div>
-              <div className="flex-1 flex flex-col justify-center before:w-[1px] before:xl:h-[200px] before:bg-white/40 xl:before:absolute xl:before:left-0 relative xl:pl-20">
+              <div className="flex-1 flex flex-col justify-center before:w-[1px] before:xl:h-[200px] before:bg-white/40 xl:before:absolute xl:before:left-0 relative xl:pl-20 bg-zinc-900/30 backdrop-blur-sm py-3">
                 <div className="mb-4">
                   <FaQuoteLeft className="h1 text-white/20 mx-auto md:mx-0" />
                 </div>
