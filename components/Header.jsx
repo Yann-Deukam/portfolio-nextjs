@@ -12,7 +12,7 @@ export default function Header() {
         <Link href="/">
           <h1 className="text-4xl font-extrabold">
             g-ni
-            <span className="text-4xl text-indigo-400">.</span>
+            <span className="text-4xl text-teal-400">.</span>
           </h1>
         </Link>
 

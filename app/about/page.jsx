@@ -240,14 +240,14 @@ export default function About() {
                           key={index}
                           className="bg-zinc-700 h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <span className="text-indigo-500">
+                          <span className="text-teal-500">
                             {item.duration}{" "}
                           </span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
-                            <span className="size-2 rounded-full bg-indigo-400"></span>
+                            <span className="size-2 rounded-full bg-teal-400"></span>
                             <p className="text-zinc-300">{item.company} </p>
                           </div>
                         </li>
@@ -271,14 +271,14 @@ export default function About() {
                           key={index}
                           className="bg-zinc-700 h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
-                          <span className="text-indigo-500">
+                          <span className="text-teal-500">
                             {item.duration}{" "}
                           </span>
                           <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
-                            <span className="size-2 rounded-full bg-indigo-400"></span>
+                            <span className="size-2 rounded-full bg-teal-400"></span>
                             <p className="text-zinc-300">{item.institution} </p>
                           </div>
                         </li>
@@ -307,7 +307,7 @@ export default function About() {
                           <TooltipProvider delayDuration={100}>
                             <Tooltip>
                               <TooltipTrigger className="w-full h-[150px] bg-zinc-700 rounded-lg flex items-center justify-center group">
-                                <div className="text-6xl group-hover:text-indigo-400 transition-all duration-150  ">
+                                <div className="text-6xl group-hover:text-teal-400 transition-all duration-150  ">
                                   {item.icon}{" "}
                                 </div>
                               </TooltipTrigger>

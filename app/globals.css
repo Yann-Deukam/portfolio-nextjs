@@ -30,6 +30,7 @@
   }
 
   .text-outline-hover {
-    -webkit-text-stroke: 1px #818cf8;
+    /* -webkit-text-stroke: 1px #818cf8; */
+    -webkit-text-stroke: 1px #14b8a6;
   }
 }

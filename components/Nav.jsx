@@ -41,7 +41,7 @@ export default function Nav() {
           href={link.path}
           className={`${
             link.path === pathname &&
-            "nav-link text-indigo-400 dark:text-indigo-300 font-bold"
+            "nav-link text-teal-400 dark:text-teal-300 font-bold"
           } nav-link`}
         >
           {link.name}

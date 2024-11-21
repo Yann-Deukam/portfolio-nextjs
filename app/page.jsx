@@ -13,7 +13,7 @@ export default function Home() {
           <span className="text-xl">Software Engineer</span>
           <h1 className="h1 mb-6">
             Hi, My name is <br />
-            <span className="text-indigo-500">Yann Donald</span>
+            <span className="text-teal-500">Yann Donald</span>
           </h1>
           <p className="max-w-[500px] mb-9 text-zinc-50/70">
             I produce high performance and efficient digital products with a
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="mb-8 xl:mb-0">
               <Socials
                 containerStyles="flex gap-6"
-                iconStyles=" hover:text-indigo-500 transition-all duration-200 ease-in-out"
+                iconStyles=" hover:text-teal-500 transition-all duration-200 ease-in-out"
               />
             </div>
           </div>

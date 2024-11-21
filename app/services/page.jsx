@@ -62,14 +62,14 @@ export default function Services() {
                 </div>
                 <Link
                   href={item.href}
-                  className="group-hover:text-indigo-500 group-hover:-rotate-45 transition-all duration-300"
+                  className="group-hover:text-teal-500 group-hover:-rotate-45 transition-all duration-300"
                 >
                   <span>
                     <MoveDownRight />
                   </span>
                 </Link>
               </div>
-              <h2 className="text-4xl font-bold leading-none group-hover:text-indigo-500 transition-all duration-300">
+              <h2 className="text-4xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
                 {item.title}
               </h2>
               <p className="text-sm text-zinc-400">{item.description}</p>

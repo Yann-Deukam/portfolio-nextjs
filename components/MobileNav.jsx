@@ -25,7 +25,7 @@ export default function MobileNav() {
   return (
     <Sheet>
       <SheetTrigger>
-        <AlignRight size={32} className="text-indigo-400" />
+        <AlignRight size={32} className="text-teal-400" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         {/* LOGO */}
@@ -33,7 +33,7 @@ export default function MobileNav() {
           <Link href="/">
             <h1 className="text-2xl font-extrabold">
               g-ni
-              <span className="text-2xl text-indigo-400">.</span>
+              <span className="text-2xl text-teal-400">.</span>
             </h1>
           </Link>
         </div>
@@ -45,7 +45,7 @@ export default function MobileNav() {
                 href={link.path}
                 className={`${
                   link.path === pathname
-                    ? "nav-link text-indigo-400 dark:text-indigo-300 font-bold text-xl"
+                    ? "nav-link text-teal-400 dark:text-teal-300 font-bold text-xl"
                     : "nav-link"
                 }`}
               >
