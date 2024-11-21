@@ -22,7 +22,7 @@ export default function Home() {
   });
   return (
     <motion.section
-      className="h-full mt-10"
+      className="h-full"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
