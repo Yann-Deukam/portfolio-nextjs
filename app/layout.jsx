@@ -2,11 +2,10 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 
 //Custom components
-import Transition from "../components/Transition";
-import StairTransition from "../components/StairTransition";
 import Header from "../components/Header";
 import VeilTransition from "../components/VeilTransition";
 import ParticlesComponent from "../components/Particles";
+import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -29,6 +28,7 @@ export default function RootLayout({ children }) {
           <Transition>{children}</Transition> */}
           <ParticlesComponent id="particles" />
           <VeilTransition>{children}</VeilTransition>
+          <Toaster />
         </div>
       </body>
     </html>

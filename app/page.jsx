@@ -7,11 +7,22 @@ import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
 import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Home() {
+  const [text] = useTypewriter({
+    words: [
+      "I produce high performance and efficient digital products with a seemless user exoerience",
+      "You can choose the sequel that best aligns with your specific goals and the unique qualities of your digital products.",
+      "Committed to innovation and excellence in every aspect of the digital product lifecycle.",
+    ],
+    loop: true,
+    typeSpeed: 50,
+    deleteSpeed: 20,
+  });
   return (
     <motion.section
-      className="h-full"
+      className="h-full mt-10"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
@@ -26,9 +37,11 @@ export default function Home() {
             Hi, My name is <br />
             <span className="text-teal-500">Yann Donald</span>
           </h1>
-          <p className="max-w-[500px] mb-9 text-zinc-50/70">
-            I produce high performance and efficient digital products with a
-            seemless user exoerience
+          <p className="max-w-[500px] mb-9 text-zinc-300">
+            <span>{text}</span>
+            <span className="text-teal-300">
+              <Cursor cursorStyle="_" />
+            </span>
           </p>
 
           {/* DOWNLOAD CV */}

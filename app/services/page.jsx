@@ -70,10 +70,10 @@ export default function Services() {
                 </Link>
               </div>
               <div className="p-3">
-                <h2 className="text-4xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
+                <h2 className="text-4xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300 mb-2">
                   {item.title}
                 </h2>
-                <p className="text-sm text-zinc-400">{item.description}</p>
+                <p className="text-sm text-zinc-300">{item.description}</p>
               </div>
               <div className="border-b border-white/20 w-full"></div>
             </div>
