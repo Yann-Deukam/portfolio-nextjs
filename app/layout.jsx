@@ -6,6 +6,7 @@ import Transition from "../components/Transition";
 import StairTransition from "../components/StairTransition";
 import Header from "../components/Header";
 import VeilTransition from "../components/VeilTransition";
+import ParticlesComponent from "../components/Particles";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
         <div className="container mx-auto">
           {/* <StairTransition />
           <Transition>{children}</Transition> */}
+          <ParticlesComponent id="particles" />
           <VeilTransition>{children}</VeilTransition>
         </div>
       </body>

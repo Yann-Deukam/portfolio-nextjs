@@ -55,3 +55,10 @@
 .swiper-pagination-bullet-active {
   background-color: #2dd4bf !important;
 }
+
+#particles canvas {
+  z-index: -1 !important;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

@@ -39,12 +39,16 @@ export default function Nav() {
         <Link
           key={index}
           href={link.path}
-          className={`${
-            link.path === pathname &&
-            "nav-link text-teal-400 dark:text-teal-300 font-bold"
-          } nav-link`}
+          className={`relative nav-link ${
+            link.path === pathname
+              ? "text-teal-400 dark:text-teal-300 font-bold active-link"
+              : ""
+          }`}
         >
           {link.name}
+          {link.path === pathname && (
+            <span className="absolute bottom-0 left-0 w-5 h-[1.5px] bg-teal-400"></span>
+          )}
         </Link>
       ))}
     </nav>
