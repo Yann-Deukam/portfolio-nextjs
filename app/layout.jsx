@@ -5,6 +5,7 @@ import "./globals.css";
 import Transition from "../components/Transition";
 import StairTransition from "../components/StairTransition";
 import Header from "../components/Header";
+import VeilTransition from "../components/VeilTransition";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -23,8 +24,9 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.variable} antialiased mx-5`}>
         <Header />
         <div className="container mx-auto">
-          <StairTransition />
-          <Transition>{children}</Transition>
+          {/* <StairTransition />
+          <Transition>{children}</Transition> */}
+          <VeilTransition>{children}</VeilTransition>
         </div>
       </body>
     </html>

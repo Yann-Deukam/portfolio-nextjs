@@ -33,4 +33,25 @@
     /* -webkit-text-stroke: 1px #818cf8; */
     -webkit-text-stroke: 1px #14b8a6;
   }
+
+  .swiper-pagination-bullet {
+    @apply bg-zinc-500 !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply bg-teal-500 text-teal-400 !important;
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #2dd4bf !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #2dd4bf !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #2dd4bf !important;
 }

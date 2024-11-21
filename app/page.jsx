@@ -1,12 +1,23 @@
+"use client";
+
 import Socials from "@/components/Socials";
 import { Button } from "@/components/ui/button";
 import { ArrowDownToLine } from "lucide-react";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
 
+import { motion } from "framer-motion";
+
 export default function Home() {
   return (
-    <section className="h-full">
+    <motion.section
+      className="h-full"
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { duration: 0.4, delay: 1, ease: "easeIn" },
+      }}
+    >
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         {/* TEXT*/}
         <div className="text-center xl:text-left">
@@ -47,6 +58,6 @@ export default function Home() {
         </div>
       </div>
       <Stats />
-    </section>
+    </motion.section>
   );
 }

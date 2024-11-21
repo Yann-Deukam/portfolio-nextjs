@@ -45,7 +45,7 @@ export default function Services() {
         animate={{ opacity: 1 }}
         transition={{
           duration: 0.4,
-          delay: 2.4,
+          delay: 1,
           ease: "easeIn",
         }}
         className="grid grid-cols-1 gap-[68px] md:grid-cols-2"
