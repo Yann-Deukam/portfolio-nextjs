@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const TestimonialsSlider = dynamic(
-  () => import("@/components/TestimonialSlider"),
+  () => import("../../components/Testimonialslider"),
   {
     ssr: false,
   }
