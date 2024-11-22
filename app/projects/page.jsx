@@ -3,6 +3,9 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import SoftwareProjects from "../../components/SoftwareProject";
+import BrandProjects from "../../components/BrandProjects";
+import UIProjects from "../../components/UIProjects";
+import Illustrations from "../../components/Illustrations";
 
 import { motion } from "framer-motion";
 
@@ -34,9 +37,15 @@ export default function page() {
         >
           <SoftwareProjects />
         </TabsContent>
-        <TabsContent value="brand">Brand identities and logos</TabsContent>
-        <TabsContent value="ui">UI/UX projects</TabsContent>
-        <TabsContent value="flyers">Illustrations, flyers & others</TabsContent>
+        <TabsContent value="brand" className="w-full text-center xl:text-left">
+          <BrandProjects />
+        </TabsContent>
+        <TabsContent value="ui" className="w-full text-center xl:text-left">
+          <UIProjects />
+        </TabsContent>
+        <TabsContent value="flyers" className="w-full text-center xl:text-left">
+          <Illustrations />
+        </TabsContent>
       </Tabs>
     </motion.section>
   );
