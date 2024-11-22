@@ -6,31 +6,31 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "web development",
+    title: "Web development",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+      "I build high performance web applications with intuitive user interfaces and a seamless user experience",
     href: "/",
   },
   {
     num: "02",
     title: "Graphic Design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+      "Brand identity, flyers, logo, illustrations, brochures and more. I provide a wide range of services in graphic design for both physical and digital supports",
     href: "/",
   },
   {
     num: "03",
     title: "Product design",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+      "For an application to blow your mind, it must be simple and easy to use. I provide a modern approach in understanding and realizing your vision",
 
     href: "/",
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Search Engine Optimization",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+      "What is the use of creating a website if it is not visible on the internet? I provide you with the best SEO solutions to make your website stand out",
     href: "/",
   },
 ];

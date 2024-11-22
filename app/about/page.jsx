@@ -10,6 +10,10 @@ import {
   SiJavascript,
   SiTypescript,
   SiAdobephotoshop,
+  SiGoogleanalytics,
+  SiExpress,
+  SiFlutter,
+  SiFirebase,
 } from "react-icons/si";
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -26,7 +30,7 @@ import { motion } from "framer-motion";
 const about = {
   title: "About Me",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+    "I am a young man dedicated to innovation and creativity. I am passionate about creating solutions that make a difference. I like learning new things, discover and try new experiences",
   info: [
     {
       fieldName: "Name",
@@ -38,7 +42,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "4+",
+      fieldValue: "3+ years",
     },
     {
       fieldName: "Nationality",
@@ -67,7 +71,7 @@ const experience = {
   icon: Icon.Briefcase,
   title: "My experience",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+    "I made sure to participate in bootcamps, internships and benevolent projects in my free time to both sharpen my skills and pursue perfection",
   items: [
     {
       company: "Ajel Corporation - Decode",
@@ -76,8 +80,13 @@ const experience = {
     },
     {
       company: "CODEES",
-      position: "Frontend developer, Graphic designer",
-      duration: "2020 - October 2024",
+      position: "Developer, Graphic designer, UI/UX Designer",
+      duration: "2020 - November 2024",
+    },
+    {
+      company: "Art Jewelry",
+      position: "Graphic Designer and System Administrator",
+      duration: "2023 - 2024",
     },
     {
       company: "GLOBAL ASSET CAMEROON Ltd.",
@@ -85,19 +94,14 @@ const experience = {
       duration: "Summer 2021",
     },
     {
-      company: "Ajel Corporation - Decode",
-      position: "Frontend developer, Graphic designer",
-      duration: "June 2024 - October 2024",
+      company: "Group CFORR",
+      position: "Brand identity Designer",
+      duration: "Summer 2023",
     },
     {
-      company: "CODEES",
-      position: "Frontend developer, Graphic designer",
-      duration: "2020 - October 2024",
-    },
-    {
-      company: "GLOBAL ASSET CAMEROON Ltd.",
-      position: "Full Stack developer Intern",
-      duration: "Summer 2021",
+      company: "Benevolent Projects, participation",
+      position: "UI/UX Designer",
+      duration: "2023 - 2024",
     },
   ],
 };
@@ -106,7 +110,7 @@ const education = {
   icon: Icon.GraduationCap,
   title: "My Education",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+    "From my first year in Highschool to my last year in college, I really learned a lot of things and got to realized I wanted to be a tech guy",
   items: [
     {
       institution: "CoT - University of Buea",
@@ -129,7 +133,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam quos voluptatibus, voluptate ut facilis illum molestias deserunt recusandae quae rerum?",
+    "From Web development to Graphic design and UI/UX design, I have a wide range of skills I put at your disposal",
   skillset: [
     {
       icon: <FaHtml5 />,
@@ -151,18 +155,40 @@ const skills = {
       icon: <FaReact />,
       name: "React",
     },
+
     {
-      icon: <SiMongodb />,
-      name: "Mongodb",
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
     },
     {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <SiNextdotjs />,
+      name: "Next.js",
+    },
+    {
+      icon: <SiFlutter />,
+      name: "Flutter",
     },
     {
       icon: <FaNodeJs />,
       name: "Node.js",
     },
+    {
+      icon: <SiMongodb />,
+      name: "Mongodb",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <FaFigma />,
+      name: "Figma",
+    },
+
     {
       icon: <SiAdobeillustrator />,
       name: "Adobe Illustrator",
@@ -172,12 +198,8 @@ const skills = {
       name: "Adobe Photoshop",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind CSS",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
+      icon: <SiGoogleanalytics />,
+      name: "Google Analytics",
     },
   ],
 };
@@ -208,7 +230,7 @@ export default function About() {
             >
               <div className="flex flex-col gap-8">
                 <h3 className="text-4xl font-bold">{about.title} </h3>
-                <p className="max-w-[600px] text-zinc-400 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-zinc-200 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0 ">
@@ -229,7 +251,7 @@ export default function About() {
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-8 text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-zinc-500 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-zinc-200 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -260,7 +282,7 @@ export default function About() {
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-8 text-center xl:text-left">
                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-zinc-500 mx-auto xl:mx-0">
+                <p className="max-w-[600px] text-zinc-200 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -292,7 +314,7 @@ export default function About() {
               <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-8 text-center xl:text-left">
                   <h3 className="text-4xl font-bold">{skills.title} </h3>
-                  <p className="max-w-[600px] text-zinc-400 mx-auto xl:mx-0">
+                  <p className="max-w-[600px] text-zinc-200 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>

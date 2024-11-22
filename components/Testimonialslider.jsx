@@ -12,18 +12,17 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const clientsTestimonials = [
   {
-    name: "John Doe",
+    name: "Nixon Fonkou",
     image: "/assets/testimonials/img-1.jpeg",
     position: "CEO",
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.",
+      "Not only is he 1 of my best friends, he has also been a game changer in our startup. I mostly appreciate his franchise and great communication skills",
   },
   {
-    name: "John Doe",
+    name: "Mme. Stephanie ",
     image: "/assets/testimonials/img-1.jpeg",
-    position: "CEO",
-    quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.",
+    position: "Business woman",
+    quote: "",
   },
   {
     name: "John Doe",

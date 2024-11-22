@@ -8,7 +8,7 @@ export default function Photo() {
   return (
     <div className="w-full h-full relative">
       <motion.div>
-        <div className="w-[288px] h-[288px] xl:w-[450px] xl:h-[450px] mix-blend-lighten home_img order-1 justify-self-center ">
+        <div className="w-[288px] h-[288px] xl:w-[450px] xl:h-[450px] mix-blend-lighten order-1 justify-self-center home_img ">
           <Image
             src="/assets/profile.jpg"
             className="object-cover home_img"

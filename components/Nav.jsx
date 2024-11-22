@@ -41,7 +41,7 @@ export default function Nav() {
           href={link.path}
           className={`relative nav-link ${
             link.path === pathname
-              ? "text-teal-400 dark:text-teal-300 font-bold active-link"
+              ? "text-teal-400 dark:text-teal-300 font-bold active-link p-1"
               : ""
           }`}
         >

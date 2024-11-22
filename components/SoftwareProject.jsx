@@ -108,8 +108,13 @@ export default function SoftwareProjects() {
         <div className="flex flex-col xl:flex-row xl:gap-8">
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none ">
             <div className="flex flex-col gap-8 h-[50%] ">
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
-                {project.num}
+              <div className="text-8xl leading-none  ">
+                <span className="text-transparent text-outline font-extrabold">
+                  {project.num}
+                </span>
+                <span className="text-4xl text-zinc-200">
+                  /{projects.length}{" "}
+                </span>
               </div>
               <h2 className="text-5xl font-bold leading-none group-hover:text-teal-500 transition-all duration-300">
                 {project.category} project

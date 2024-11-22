@@ -12,9 +12,9 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 export default function Home() {
   const [text] = useTypewriter({
     words: [
-      "I produce high performance and efficient digital products with a seemless user exoerience",
-      "You can choose the sequel that best aligns with your specific goals and the unique qualities of your digital products.",
-      "Committed to innovation and excellence in every aspect of the digital product lifecycle.",
+      "You've worked hard to shape your vision—let me help bring it to life.",
+      "Your focus should be on growth; I'll handle the technical execution.",
+      "Every great idea needs expert care—let me turn yours into success.",
     ],
     loop: true,
     typeSpeed: 50,
@@ -32,9 +32,11 @@ export default function Home() {
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
         {/* TEXT*/}
         <div className="text-center xl:text-left">
-          <span className="text-xl">Software Engineer</span>
+          <span className="text-xl text-outline text-transparent">
+            Software Engineer
+          </span>
           <h1 className="h1 mb-6">
-            Hi, My name is <br />
+            Hi, my name is <br />
             <span className="text-teal-500">Yann Donald</span>
           </h1>
           <p className="max-w-[500px] mb-9 text-zinc-300">
@@ -66,7 +68,7 @@ export default function Home() {
         </div>
 
         {/* PHOTO*/}
-        <div>
+        <div className="">
           <Photo />
         </div>
       </div>

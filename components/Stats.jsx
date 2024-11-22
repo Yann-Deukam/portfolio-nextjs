@@ -17,7 +17,7 @@ const stats = [
   },
   {
     num: 30,
-    text: "Satisfied clients",
+    text: "Satisfied clients and businesses",
   },
 ];
 
