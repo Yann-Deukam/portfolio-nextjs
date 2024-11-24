@@ -4,19 +4,19 @@ import Link from "next/link";
 const socials = [
   {
     icon: <Github />,
-    url: "https://github.com/yann-deukam",
+    url: "https://github.com/Yann-Deukam",
   },
   {
     icon: <Linkedin />,
-    url: "https://www.linkedin.com/in/yann-deukam/",
+    url: "https://cm.linkedin.com/in/deukam-yann-a41648329",
   },
   {
     icon: <Instagram />,
-    url: "https://www.instagram.com/yanndonald801/",
+    url: "https://www.instagram.com/yann_donald_01/profilecard/?igsh=MXIzOXE3bXNiNDhkbg==",
   },
   {
     icon: <Dribbble />,
-    url: "https://dribbble.com/yanndonald",
+    url: "https://dribbble.com/yanndeukam237",
   },
 ];
 

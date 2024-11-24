@@ -119,7 +119,7 @@ const education = {
     },
     {
       institution: "Institut Universitaire de la Côte",
-      degree: "Higher National Diploma in Software Engineering",
+      degree: "HND in Software Engineering",
       duration: "2020 - 2022",
     },
     {

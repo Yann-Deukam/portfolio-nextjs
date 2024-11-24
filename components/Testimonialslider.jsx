@@ -13,30 +13,38 @@ import { FaQuoteLeft } from "react-icons/fa";
 const clientsTestimonials = [
   {
     name: "Nixon Fonkou",
-    image: "/assets/testimonials/img-1.jpeg",
-    position: "CEO",
+    image: "/assets/testimonials/nixon.jpg",
+    position: "CODEES",
     quote:
       "Not only is he 1 of my best friends, he has also been a game changer in our startup. I mostly appreciate his franchise and great communication skills",
   },
   {
-    name: "Mme. Stephanie ",
-    image: "/assets/testimonials/img-1.jpeg",
-    position: "Business woman",
-    quote: "",
+    name: "Pony Victor",
+    image: "/assets/testimonials/pony.png",
+    position: "AJEL - Decode",
+    quote:
+      "Working with him was very refreshing. His sense of details and his professionalism are outstanding. And I will not even talk avout his skills",
   },
   {
-    name: "John Doe",
-    image: "/assets/testimonials/img-1.jpeg",
-    position: "CEO",
+    name: "Tsata Gloria ",
+    image: "/assets/testimonials/stephanie.jpg",
+    position: "Business owner",
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.",
+      "Despite all the difficulties I had building my business, This young man made it happen.",
   },
   {
-    name: "John Doe",
-    image: "/assets/testimonials/img-1.jpeg",
-    position: "CEO",
+    name: "Olivier Kueda",
+    image: "/assets/testimonials/olivier.jpg",
+    position: "Business owner",
     quote:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, voluptatum.",
+      "As a designer and developer, I have worked with many talented people and this guy is one of them.",
+  },
+  {
+    name: "Alexia Hypado",
+    image: "/assets/testimonials/alexia.jpg",
+    position: "Business owner",
+    quote:
+      "I never knew the importance of digital support until I met Yann. He is a true expert in his field.",
   },
 ];
 
@@ -53,7 +61,7 @@ export default function TestimonialSlider() {
       {clientsTestimonials.map((item, index) => {
         return (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row items-center gap-x-8 h-full px-16 ">
+            <div className="flex flex-col md:flex-row items-center gap-x-8 gap-y-10 h-full px-16 ">
               <div className="w-full max-w-[300px] flex flex-col justify-center items-center relative mx-auto xl:mx-0 ">
                 <div className="flex flex-col justify-center items-center">
                   <div className="mb-2 mx-auto">
@@ -62,7 +70,7 @@ export default function TestimonialSlider() {
                       width={100}
                       height={100}
                       alt="client"
-                      className="object-cover"
+                      className="object-cover rounded-full w-24 h-24"
                     />
                   </div>
                   <div className="text-lg font-bold">{item.name}</div>

@@ -3,6 +3,7 @@
 import {
   Sheet,
   SheetTrigger,
+  SheetTitle,
   SheetContent,
   SheetClose,
 } from "@/components/ui/sheet";
@@ -27,6 +28,7 @@ export default function MobileNav() {
       <SheetTrigger>
         <AlignRight size={32} className="text-teal-400" />
       </SheetTrigger>
+      <SheetTitle className="hidden">Menu</SheetTitle>
       <SheetContent className="flex flex-col">
         {/* LOGO */}
         <div className="my-20 text-center">

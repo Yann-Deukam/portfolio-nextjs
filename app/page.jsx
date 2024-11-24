@@ -39,7 +39,7 @@ export default function Home() {
             Hi, my name is <br />
             <span className="text-teal-500">Yann Donald</span>
           </h1>
-          <p className="max-w-[500px] mb-9 text-zinc-300">
+          <p className="max-w-[500px] mb-9 text-zinc-300 min-h-[100px] ">
             <span>{text}</span>
             <span className="text-teal-300">
               <Cursor cursorStyle="_" />
@@ -53,7 +53,11 @@ export default function Home() {
               size="lg"
               className="flex items-center gap-2"
             >
-              <span>Download CV</span>
+              <span>
+                <a href="/yann-deukam-CV.pdf" download>
+                  Download CV
+                </a>
+              </span>
               <ArrowDownToLine />
             </Button>
 

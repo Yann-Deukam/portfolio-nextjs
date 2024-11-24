@@ -25,8 +25,8 @@ export default function Testimonials() {
     >
       <div className="h-full py-20 text-center">
         <div className="h-full flex flex-col justify-center">
-          <h2 className="h2 mb-0 xl:mb-0">
-            What clients <span className="text-teal-400"> Say</span>
+          <h2 className="h2 mb-4 xl:mb-0">
+            What clients <span className="text-teal-400"> Say</span> about me
           </h2>
           <div className="w-full">
             <TestimonialsSlider />
